@@ -16,6 +16,9 @@ s_nombre = 'Manolo es "amigo" mío'
 s_textoLargo = """Esto es un mensaje
 ...con tres saltos
 ...de linea"""
+# Muestra variable s_textolargo
+
+print (s_textoLargo)
 
 # Sobreescribimos el valor de la variable s_edad y ahora la ponemos como string:
 s_edad = "47"
@@ -48,11 +51,21 @@ a = 'string'
 b = 15
 c = True
 
-# Para verificar el tipo de cualquier objeto en Python, usamos la función type() :
-
+# Para verificar el tipo de cualquier objeto en Python, usamos la función type():
 print(type(n_edad))
 print(type(n_numero))
 print(type(s_nombre))
 print(type(NUMEROPI))
 print(type(is_verdadero))
 print(type(is_casado))
+
+# Añado coma y nombre de la variable despues de type para ver resultado. 
+# Lo imprime en pantalla justo a continuación, dejando un espacio.
+
+print()
+print(type(n_edad), n_edad)
+print(type(n_numero), n_numero)
+print(type(s_nombre), s_nombre)
+print(type(NUMEROPI), NUMEROPI)
+print(type(is_verdadero), is_verdadero)
+print(type(is_casado), is_casado)
