@@ -9,12 +9,13 @@ numero_secreto = random.randint(1, 100)
 intentos = 0
 
 print("¡Bienvenido al juego de adivinar el número!")
+print()
 print("He elegido un número entre 1 y 100. ¡A ver si puedes adivinarlo!")
 
 while True:
     # Pedir al usuario que ingrese un número
+    print()
     guess = input("Introduce tu intento: ")
-    
     # Verificar si la entrada es un número
     if guess.isdigit():
         guess = int(guess)
@@ -22,7 +23,6 @@ while True:
     else:
         print("Por favor, introduce un número válido.")
         continue
-
     # Comparar el número ingresado con el número secreto
     if guess < numero_secreto:
         print("El número secreto es mayor que", guess)
