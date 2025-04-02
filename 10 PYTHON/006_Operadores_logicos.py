@@ -31,5 +31,3 @@ if ( 20 <= edad < 30) or (30 <= edad <40):
 #        print('Fuera de rango')
 else:
     print("No está dentro de los 20's ni 30's")
-
-

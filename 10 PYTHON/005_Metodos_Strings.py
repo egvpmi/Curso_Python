@@ -76,7 +76,10 @@ print(s_texto12.replace("casa", "hogar"))
 #   https://www.freecodecamp.org/espanol/news/metodos-de-string-de-python-explicados-con-ejemplo/
 
 
+#   Cambio nobre archivo con Replace()
 
+s_texto13 = "Bienvenida+e+instrucciones+para+realización+curso+Previo+PYTHON+AVANZADO-20250324_170201-Grabación+de+la+reunión"
+print(s_texto13.replace("+", " "))
 
 
 
