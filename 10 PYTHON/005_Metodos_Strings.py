@@ -64,22 +64,36 @@ print(s_texto9.split())
 s_texto10 = "Esta sería la primera parte,y esta la segunda"
 print(s_texto10.split(","))
  
-#   strip(): Borra los espacios sobrantes al principio y al final.
+""" strip(): Borra los espacios sobrantes al principio y al final.
+No modifica los caracteres del medio de la cadena. 
+No necesariamente tiene que ser un espacio, puede ser cualquier carácter.
+Si no se especifican otro caracter (dentro del parentesis), elimina:
+Espacios ( )
+Tabulaciones (\t)
+Saltos de línea (\n)
+Retornos de carro (\r) """
+
 s_texto11 = "   En este texto había espacios al principio y al final    "
 print(s_texto11.strip())
 
+# lstrip(): Solo elimina caracteres del lado izquierdo (inicio)
+s_texto12= "   Hola Mundo   "
+print(s_texto12.lstrip())  # "Hola Mundo   "
+
+# rstrip(): Solo elimina caracteres del lado derecho (final)
+s_texto13 = "   Hola Mundo   "
+print(s_texto13.rstrip())  # "   Hola Mundo"
+
 #   replace(): Cambia una palabra o una letra por otra.
-s_texto12 = "Vamos reemplazar la palabra casa"
-print(s_texto12.replace("casa", "hogar"))
-
-#   Te invito a que inspecciones el resto de funciones predefinidas para los strings en:
-#   https://www.freecodecamp.org/espanol/news/metodos-de-string-de-python-explicados-con-ejemplo/
-
+s_texto14 = "Vamos reemplazar la palabra casa"
+print(s_texto14.replace("casa", "hogar"))
 
 #   Cambio nobre archivo con Replace()
+s_texto15 = "Bienvenida+e+instrucciones+para+realización+curso+Previo+PYTHON+AVANZADO-20250324_170201-Grabación+de+la+reunión"
+print(s_texto15.replace("+", " "))
 
-s_texto13 = "Bienvenida+e+instrucciones+para+realización+curso+Previo+PYTHON+AVANZADO-20250324_170201-Grabación+de+la+reunión"
-print(s_texto13.replace("+", " "))
-
-
-
+#
+#
+#   Te invito a que inspecciones el resto de funciones predefinidas para los strings en:
+#   https://www.freecodecamp.org/espanol/news/metodos-de-string-de-python-explicados-con-ejemplo/
+#
